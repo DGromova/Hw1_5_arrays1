@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // Задание 1, 2
@@ -83,5 +85,17 @@ public class Main {
                 System.out.print(arr[i] + 1);
             }
         }
+        System.out.println();
+        // Задание 4. Способ 2
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                arr [i] ++;
+            }
+            System.out.print(arr[i] + " ");
+        }
+       System.out.println();
+        // Задание 4. Способ 3
+        String str = Arrays.toString(arr);
+        System.out.print(str);
     }
 }
