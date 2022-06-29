@@ -41,48 +41,33 @@ public class Main {
         System.out.println();
         // Задание 3
         // Массив 1
-        for (int i = arr.length - 1; i > 0; i--) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (i != 0) {
             System.out.print(arr[i] + ", ");
-        }
-        for (int i = 0; i < arr.length; i--) {
-            if (i == 0) {
-                System.out.print(arr[i]);
+            } else {
+            System.out.print(arr[i]);
             }
         }
         System.out.println();
         // Массив 2
-        for (int i = box.length - 1; i > 0; i--) {
+        for (int i = box.length - 1; i >= 0; i--) {
+            if (i != 0) {
             System.out.print(box[i] + ", ");
-        }
-        for (int i = 0; i < box.length; i--) {
-            if (i == 0) {
+            } else {
                 System.out.print(box[i]);
             }
         }
         System.out.println();
         // Массив 3
-        for (int i = bag.length - 1; i > 0; i--) {
+        for (int i = bag.length - 1; i >= 0; i--) {
+            if (i != 0) {
             System.out.print(bag[i] + ", ");
-        }
-        for (int i = 0; i < bag.length; i--) {
-            if (i == 0) {
+            } else {
                 System.out.print(bag[i]);
             }
         }
         System.out.println();
-        // Задание 4. Способ 1
-        for (int i = 0; i < arr.length; i++) {
-            if (i < arr.length && arr[i] % 2 != 0) {
-                arr[i]++;
-            }
-            if (i < arr.length - 1) {
-                System.out.print(arr[i] + ", ");
-            } else {
-                System.out.print(arr[i]);
-            }
-        }
-        System.out.println();
-        // Задание 4. Способ 2
+        // Задание 4.
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 != 0) {
                 arr[i]++;
